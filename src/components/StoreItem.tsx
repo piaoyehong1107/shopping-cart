@@ -42,8 +42,14 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                             align-items-center
                             justify-content-center"
                                 style={{ gap: ".5rem" }}
-                            > Hi </div>
-                        Bye    
+                            > 
+                                <Button>-</Button>
+                                <div>
+                                    <span className="fs-3">{quantity}</span> in cart
+                                </div>
+                                <Button>+</Button>
+                            </div>
+                        <Button variant="danger" size="sm"> Remove </Button>    
                         </div>
                     }
                 </div>

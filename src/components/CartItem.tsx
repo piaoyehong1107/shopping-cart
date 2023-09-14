@@ -42,7 +42,8 @@ export function CartItem({ id, quantity }: CartItemProps) {
             <Button
                 variant="outline-danger"
                 size="sm"
-                onClick={() => removeFromCart(item.id)}>
+                onClick={() => removeFromCart(item.id)}
+            >
                 &times;
             </Button>
         </Stack>
